@@ -2,14 +2,24 @@
 import commander from 'commander';
 import {find} from './index.mjs';
 
-commander.option('-d, --debug', 'output extra debugging')
-commander.parse(process.argv);
-const word = commander.args[0];
-
-async function main({word}){
-
-  console.log(await find(word))
-
+function myParseInt(value, dummyPrevious) {
+  return parseInt(value);
 }
 
-main({word});
+commander
+.option('-p, --popular', 'List only popular English words')
+.option('-r, --rank <number>', 'Filter by rank (0 - 50000)', myParseInt)
+.parse(process.argv);
+
+async function main(options){
+  const result = await find(options);
+  if (result.length) console.log(result.join('\n'))
+}
+
+const word = commander.args[0];
+
+main({
+  word,
+  popular:commander.popular,
+  rank:commander.rank,
+});

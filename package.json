@@ -4,7 +4,7 @@
   "description": "Unix Command Line Utility For Finding Rhymes",
   "main": "index.mjs",
   "bin": {
-    "rhy": "./test.mjs"
+    "rhy": "./cli.mjs"
   },
   "scripts": {
     "test": "./test.mjs"
@@ -26,6 +26,9 @@
   "homepage": "https://github.com/fantasyui-com/rhy#readme",
   "dependencies": {
     "commander": "^5.1.0",
+    "lodash": "^4.17.15",
+    "most-common-words-by-language": "^2.17.7",
+    "natural-sort-by-key": "^2.0.2",
     "rhyme": "0.0.3"
   }
 }
