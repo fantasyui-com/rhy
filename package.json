@@ -1,0 +1,31 @@
+{
+  "name": "rhy",
+  "version": "1.0.2",
+  "description": "Unix Command Line Utility For Finding Rhymes",
+  "main": "index.mjs",
+  "bin": {
+    "rhy": "./test.mjs"
+  },
+  "scripts": {
+    "test": "./test.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fantasyui-com/rhy.git"
+  },
+  "keywords": [
+    "rhyme",
+    "poem",
+    "poetry"
+  ],
+  "author": "https://github.com/fantasyui-com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fantasyui-com/rhy/issues"
+  },
+  "homepage": "https://github.com/fantasyui-com/rhy#readme",
+  "dependencies": {
+    "commander": "^5.1.0",
+    "rhyme": "0.0.3"
+  }
+}
