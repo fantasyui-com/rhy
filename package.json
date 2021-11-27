@@ -7,7 +7,8 @@
     "rhy": "./cli.mjs"
   },
   "scripts": {
-    "test": "./test.mjs"
+    "test": "./test.mjs",
+    "save": "git add .; git commit -m 'New Release'; git push; npm version patch; npm publish; git push;"
   },
   "repository": {
     "type": "git",
@@ -18,7 +19,7 @@
     "poem",
     "poetry"
   ],
-  "author": "https://github.com/fantasyui-com",
+  "author": "fantasyui.com <fantasyui.com@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/fantasyui-com/rhy/issues"
