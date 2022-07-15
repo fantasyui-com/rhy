@@ -1,6 +1,6 @@
 {
   "name": "rhy",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "Unix Command Line Utility For Finding Rhymes",
   "main": "index.mjs",
   "bin": {
